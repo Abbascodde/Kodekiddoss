@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+
+    <title>Kodkiddoss</title>
+</head>
+
+<body>
+    <!-- nav section start here -->
+    <header class="mx-auto px-4 py-5 justify-center">
+        <nav class="bg-white fixed top-0 z-50 flex justify-around items-center py-4 lg:px-4 md:px-2 px-4">
+            <div class="flex items-center space-x-4">
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="flex items-center justify-center w-10 h-10 border rounded-full hover:border-gray-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold">Kod<span class="text-[#FB8F28]">kiddoss</span></h2>
+                </div>
+            </div>
+            <ul id="menu" class="hidden lg:flex space-x-8">
+                <li class="text-[#FB8F28] cursor-pointer">Home</li>
+                <li class="cursor-pointer">About Us</li>
+                <li class="cursor-pointer">Courses</li>
+                <li class="cursor-pointer">Resources</li>
+                <li class="bg-[#374140] text-white px-2 p-1 rounded cursor-pointer">Join now</li>
+                <li class="bg-[#FB8F28] text-white p-1 rounded cursor-pointer">Book a free class</li>
+
+            </ul>
+          
+
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 mt-20">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
+            <div class="w-full sm:w-1/2 flex flex-col items-center sm:items-start">
+                <h1 class="text-4xl font-extrabold font-poppins mb-6 text-center sm:text-left">Coding Courses for Kids</h1>
+                <p class="text-gray-500 font-Roboto mb-4 text-center sm:text-left max-w-lg">Kodkiddoss is a platform that offers coding courses for kids.
+                    We offer a range of courses for kids of all ages and
+                    skill levels.</p>
+                <p class="text-gray-500 font-Roboto mb-6 text-center sm:text-left max-w-lg">Get instructors-led coding classes for your kids in the comfort of
+                    your home.</p>
+                <button class="bg-[#FB8F28] text-white py-2 px-6 rounded-md hover:bg-[#e07d1d] transition-colors duration-300 w-full sm:w-auto">Book a free class</button>
+            </div>
+
+            <div class="w-full sm:w-1/2 relative h-[400px] flex items-center justify-center">
+                <img class="absolute w-[90%] sm:w-[100%] max-w-[600px] object-contain"
+                    src="images/blob 1.png" alt="">
+                <img class="absolute w-[70%] sm:w-[80%] max-w-[400px] object-contain z-10"
+                    src="images/progrM 1.png" alt="">
+            </div>
+        </div>
+    </main>
+
+    <section class="container mx-auto px-4 mt-20 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-8">
+        <div class="sm:w-1/2 order-2 sm:order-1">
+            <h1 class="text-4xl font-extrabold font-Roboto mb-5">Online Coding Courses for Kids</h1>
+            <p class="text-gray-500 font-Roboto mt-20 sm:mt-0">This innovative coding platform teaches kids the <br> basics
+                of coding and enables them to develop creative skills, <br> problem-solving skills and enhance their
+                confidence.
+            </p>
+        </div>
+        <div class="sm:w-1/2 order-1 sm:order-2">
+            <img class="w-full h-full object-contain" src="images/08.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 mt-20 relative">
+        <!-- Left Arrow -->
+        <button class="arrow-left absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg z-10 hover:bg-gray-100 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#374140" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6" />
+            </svg>
+        </button>
+    
+        <!-- Card Container -->
+        <div class="card-container overflow-hidden sm:grid sm:grid-cols-3 sm:gap-8 lg:grid-cols-1 lg:gap-4">
+            <div class="flex gap-8 transition-transform duration-300">
+                <!-- Card 1: Little Coder -->
+                <div class="card flex-shrink-0 w-full lg:w-[300px] bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <img class="w-full h-[200px] object-cover rounded-t-lg" src="images/Little Coder - Home 1littlecoder.png" alt="Little Coder Course Image" />
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl text-[#FB8F28] font-bold font-Poppins">Little Coder</h2>
+                        <p class="text-gray-500 font-Poppins">Age 5-9</p>
+                        <p class="text-gray-500 font-Poppins text-center">Create Animations & Games <br> using Visual coding</p>
+                        <button class="bg-[#374140] text-white p-1 pb-2 px-5 rounded mt-5 mb-2 cursor-pointer hover:bg-[#FB8F28] transition-colors duration-300">Enroll now</button>
+                    </div>
+                </div>
+    
+                <!-- Card 2: AI Course -->
+                <div class="card flex-shrink-0 w-full lg:w-[300px] bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <img class="w-full h-[200px] object-cover rounded-t-lg" src="images/Little Coder - Home 1.png" alt="AI Course Image" />
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl text-[#FB8F28] font-bold font-Poppins">AI Course</h2>
+                        <p class="text-gray-500 font-Poppins">Age 9+</p>
+                        <p class="text-gray-500 font-Poppins text-center">Create Animations & Games <br> using Visual coding</p>
+                        <button class="bg-[#374140] text-white p-1 pb-2 px-5 rounded mt-5 mb-2 cursor-pointer hover:bg-[#FB8F28] transition-colors duration-300">Enroll now</button>
+                    </div>
+                </div>
+    
+                <!-- Card 3: Web Development -->
+                <div class="card flex-shrink-0 w-full lg:w-[300px] bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <img class="w-full h-[200px] object-cover rounded-t-lg" src="images/WEBDEV 1.png" alt="Web Development Course Image" />
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl text-[#FB8F28] font-bold font-Poppins">Design Your Website</h2>
+                        <p class="text-gray-500 font-Poppins">Age 10+</p>
+                        <p class="text-gray-500 font-Poppins text-center">Create Animations & Games <br> using Visual coding</p>
+                        <button class="bg-[#374140] text-white p-1 pb-2 px-5 rounded mt-5 mb-2 cursor-pointer hover:bg-[#FB8F28] transition-colors duration-300">Enroll now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Right Arrow -->
+        <button class="arrow-right absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg z-10 hover:bg-gray-100 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#374140" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6" />
+            </svg>
+        </button>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="container mx-auto px-4 mt-20 relative bg-[#F7F7F7] rounded-lg shadow-lg p-8">
+        <div class="flex flex-col lg:flex-row items-start justify-between gap-12">
+            <div class="lg:w-2/5">
+                <h1 class="text-4xl font-extrabold font-Poppins mb-8">Why Choose Kodkiddoss?</h1>
+                <p class="text-gray-500 font-Poppins text-lg">
+                    Give your future champions exactly what they need to succeed in a language they understand. Cyber Square offers personalised learning pathways in which we recommend coding courses to kids depending on their abilities. Game-Based Programming techniques make learning smoother for anybody, regardless of age or coding experience.
+                </p>
+            </div>
+            <div class="lg:w-3/5">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center">
+                        <img width="50" class="mb-4" src="images/Star 1.png" alt="">
+                        <p class="text-lg font-normal font-Poppins text-center">Python</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center">
+                        <img width="50" class="mb-4" src="images/Star 1.png" alt="">
+                        <p class="text-lg font-normal font-Poppins text-center">Artificial Intelligence</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center">
+                        <img width="50" class="mb-4" src="images/Star 1.png" alt="">
+                        <p class="text-lg font-normal font-Poppins text-center">Internet of Things</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center hidden md:flex">
+                        <img width="50" class="mb-4" src="images/Star 1.png" alt="">
+                        <p class="text-lg font-normal font-Poppins text-center">Robotics</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center hidden md:flex">
+                        <img width="50" class="mb-4" src="images/Star 1.png" alt="">
+                        <p class="text-lg font-normal font-Poppins text-center">Game Development</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center hidden md:flex">
+                        <img width="50" class="mb-4" src="images/Star 1.png" alt="">
+                        <p class="text-lg font-normal font-Poppins text-center">Block Coding</p>
+                    </div>
+                </div>
+                <button class="bg-[#FB8F28] text-white py-2 px-6 rounded mt-6 w-full md:hidden hover:bg-[#374140] transition-colors duration-300">
+                    Display All
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="container mx-auto px-4 mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-[#374140] rounded shadow-lg p-5 md:p-10 lg:p-20">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#FB8F28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-5"><path d="M10.29 3.86L1.82 18a2 2 0 0 1-1.71-.71l8.42-8.42a9 9 0 1 1-12.84-12.84L1.82 3.86m0 0a3 3 0 0 1 4.24 0l8.42 8.42a3 3 0 0 1 0 4.24l-8.42 8.42a9 9 0 0 1 12.84 12.84L23.18 5.7a3 3 0 0 1-4.24-4.24"/></svg>
+                <h3 class="text-xl font-normal font-Poppins mb-2 text-[#FB8F28]">Critical Thinking</h3>
+                <p class="text-gray-500 font-Poppins">The kids improves their critical thinking and reasoning capability through the <br> code generation process.</p>
+            </div>
+            <div class="bg-[#374140] rounded shadow-lg p-5 md:p-10 lg:p-20">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#FB8F28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-5"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/><path d="M12 8C9.79 8 8 9.79 8 12C8 14.21 9.79 16 12 16C14.21 16 16 14.21 16 12C16 9.79 14.21 8 12 8Z"/></svg>
+                <h3 class="text-xl font-normal font-Poppins mb-2 text-[#FB8F28]">Creativity</h3>
+                <p class="text-gray-500 font-Poppins">Learning to Code improves the brain's function by increasing creativity.</p>
+            </div>
+            <div class="bg-[#374140] rounded shadow-lg p-5 md:p-10 lg:p-20">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#FB8F28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-5"><path d="M22 11.08V12a10 10 0 1 1-5.93-.88l.54-.32a1 1 0 0 0-1.04-.88l.54 .32a9 9 0 0 0 5.93 .88v-1.08a1 1 0 0 0-.65-.35l-.54 .32a1 1 0 0 1-1.04-.88l.54-.32a10 10 0 0 1 5.93 .88zm-2.1 4.01a1 1 0 0 1 .65-.35l.54 .32a1 1 0 0 1 1.04-.88l-.54-.32a1 1 0 0 0-.65-.35l.54 .32a1 1 0 0 1 1.04 .88l-.54-.32z"/><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/></svg>
+                <h3 class="text-xl font-normal font-Poppins mb-2 text-[#FB8F28]">Logical Reasoning</h3>
+                <p class="text-gray-500 font-Poppins">Strengthen logical reasoning skills by creating Algorithms.</p>
+            </div>
+            <div class="bg-[#374140] rounded shadow-lg p-5 md:p-10 lg:p-20">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#FB8F28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><line x1="16" y1="3.95" x2="21" y2="3.95"/></svg>
+                <h3 class="text-xl font-normal font-Poppins mb-2 text-[#FB8F28]">Collaboration</h3>
+                <p class="text-gray-500 font-Poppins">Coding involves build and deploy programs. So it requires teamwork.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="container mx-auto px-4 mt-20">
+        <div class="flex items-center justify-between gap-8 md:flex-row flex-col-reverse">
+            <div class="md:flex-1 w-full md:w-1/2">
+                <h1 class="text-4xl font-extrabold font-Poppins mb-5 text-center md:text-left">What is Kodkiddoss?</h1>
+                <p class="text-gray-500 font-Poppins text-center md:text-left">Kodkiddoss is a platform that offers coding courses for kids.
+                    We offer a range of courses for kids of all ages and
+                    skill levels.</p>
+                <p class="text-gray-500 font-Poppins text-center md:text-left">Get instructors-led coding classes for your kids in the comfort of
+                    your home.</p>
+                <button class="bg-[#FB8F28] text-white p-1 px-5 rounded mt-5 w-full md:w-auto">Book a free class</button>
+            </div>
+            <div class="md:flex-1 w-full md:w-1/2">
+                <img width="100%" class="rounded" src="images/10.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="container mx-auto px-4 mt-20">
+        <div class="flex flex-wrap md:flex-nowrap items-center justify-center shadow-lg rounded">
+            <div class="bg-[#FB8F28] p-5 rounded w-full md:w-1/2">
+                <h1 class="text-4xl text-white font-extrabold font-Poppins mb-5">Our Specialities</h1>
+                <h4 class="text-[20px] text-white flex items-center font-Roboto mb-5"><span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" viewBox="0 0 512 512">
+                    <path fill="#333" d="M17.47 250.9C88.82 328.1 158 397.6 224.5 485.5c72.3-143.8 146.3-288.1 268.4-444.37L460 26.06C356.9 135.4 276.8 238.9 207.2 361.9c-48.4-43.6-126.62-105.3-174.38-137z" stroke-width="13" stroke="#333" />
+                </svg>
+            </span>Space For Ideas</h4>
+                <p class="font-Poppins text-xs text-white pl-10">Cyber Square nourishes young aspiring minds <br>
+                    to get a clear vision of their ideas. We guide <br> 
+                    them in analyzing and building their vision <br>
+                    and ideas into reality.</p>
+                <h4 class="text-[20px] text-white flex items-center font-Roboto mb-5"><span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" viewBox="0 0 512 512">
+                    <path fill="#333" d="M17.47 250.9C88.82 328.1 158 397.6 224.5 485.5c72.3-143.8 146.3-288.1 268.4-444.37L460 26.06C356.9 135.4 276.8 238.9 207.2 361.9c-48.4-43.6-126.62-105.3-174.38-137z" stroke-width="13" stroke="#333" />
+                </svg></span>Engaging Curriculums</h4>
+                <p class="font-Poppins text-xs text-white pl-10">Our goal is to create an engaging system that <br>
+                    provides exciting activities so children can <br>
+                    understand the programming concepts <br>
+                    thoroughly so that they can perform them on <br>
+                     their own. With Cyber Square kids have fun <br>
+                    while they learn without frustrations.</p>
+                 <h4 class="text-[20px] text-white flex items-center font-Roboto mb-5"><span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" viewBox="0 0 512 512">
+                    <path fill="#333" d="M17.47 250.9C88.82 328.1 158 397.6 224.5 485.5c72.3-143.8 146.3-288.1 268.4-444.37L460 26.06C356.9 135.4 276.8 238.9 207.2 361.9c-48.4-43.6-126.62-105.3-174.38-137z" stroke-width="13" stroke="#333" />
+                </svg></span>Professional Approach & Tools</h4>
+                 <p class="font-Poppins text-xs text-white pl-10">We use the latest tools and technologies to <br>
+                    ensure that our students are able to learn at <br> their own pace and 
+                    progress at their own speed. We also provide <br> support to our students 
+                    so that they can learn at their own pace.</p>
+            </div>
+            <div class="bg-red-100 p-5 rounded w-full md:w-1/2">
+                <h1 class="text-4xl font-extrabold font-Poppins mb-5">Our Specialities</h1>
+                <h4 class="text-[20px] text-black flex items-center font-Roboto font-Poppins mb-5"><span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" viewBox="0 0 512 512">
+                    <path fill="#FB8F28" d="M17.47 250.9C88.82 328.1 158 397.6 224.5 485.5c72.3-143.8 146.3-288.1 268.4-444.37L460 26.06C356.9 135.4 276.8 238.9 207.2 361.9c-48.4-43.6-126.62-105.3-174.38-137z" stroke-width="13" stroke="#FB8F28" />
+                </svg></span>Space For Ideas</h4>
+                <p class="font-Poppins text-xs pl-10">Cyber Square nourishes young <br> aspiring minds 
+                    to get a clear vision of their ideas. We guide <br>
+                    them in analyzing and building their vision <br>
+                    and ideas into reality.</p>
+                <h4 class="text-[20px] text-black flex items-center font-normal font-Poppins mb-5"><span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" viewBox="0 0 512 512">
+                    <path fill="#FB8F28" d="M17.47 250.9C88.82 328.1 158 397.6 224.5 485.5c72.3-143.8 146.3-288.1 268.4-444.37L460 26.06C356.9 135.4 276.8 238.9 207.2 361.9c-48.4-43.6-126.62-105.3-174.38-137z" stroke-width="13" stroke="#FB8F28" />
+                </svg></span>Engaging Curriculums</h4>
+                <p class="font-Poppins text-xs pl-10">Our goal is to create an engaging system that <br>
+                    provides exciting activities so children can <br>
+                    understand the programming concepts <br>
+                    thoroughly so that they can perform them on <br>
+                     their own. With Cyber Square kids have fun <br>
+                    while they learn without frustrations.</p>
+                 <h4 class="text-[20px] text-black flex items-center font-normal font-Poppins mb-5"><span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" viewBox="0 0 512 512">
+                    <path fill="#FB8F28" d="M17.47 250.9C88.82 328.1 158 397.6 224.5 485.5c72.3-143.8 146.3-288.1 268.4-444.37L460 26.06C356.9 135.4 276.8 238.9 207.2 361.9c-48.4-43.6-126.62-105.3-174.38-137z" stroke-width="13" stroke="#FB8F28" />
+                </svg></span>Professional Approach & Tools</h4>
+                 <p class="font-Poppins text-xs pl-10">We use the latest tools and technologies to <br>
+                    ensure that our students are able to learn at <br> their own pace and 
+                    progress at their own speed. We also provide <br> support to our students 
+                    so that they can learn at their own pace.</p>
+            </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
