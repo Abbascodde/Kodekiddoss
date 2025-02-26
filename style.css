@@ -15,6 +15,46 @@
     }
 }
 
+/* Mobile Menu Animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.animate-slideDown {
+    animation: slideDown 0.3s ease forwards;
+}
+
+.animate-slideUp {
+    animation: slideUp 0.3s ease forwards;
+}
+
+#mobile-menu {
+    transition: all 0.3s ease;
+    transform-origin: top;
+}
+
+#mobile-menu.hidden {
+    display: none;
+}
+
 body {
     padding-top: 80px; /* Adjust this value based on the height of your nav */
 }
@@ -22,9 +62,6 @@ body {
 ul {
     font-family: 'Baloo', cursive;
 }
-
-
- 
 
 .fixed {
     position: fixed;
@@ -48,4 +85,34 @@ ul {
     justify-content: center; /* Center the cards horizontally */
     align-items: center; /* Center the cards vertically if needed */
     gap: 20px; /* Adjust gap between cards as necessary */
+}
+
+/* Add smooth transition for mobile menu items */
+#mobile-menu ul li {
+    transition: all 0.2s ease;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+#mobile-menu:not(.hidden) ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger animation for menu items */
+#mobile-menu ul li:nth-child(1) { transition-delay: 0.1s; }
+#mobile-menu ul li:nth-child(2) { transition-delay: 0.15s; }
+#mobile-menu ul li:nth-child(3) { transition-delay: 0.2s; }
+#mobile-menu ul li:nth-child(4) { transition-delay: 0.25s; }
+#mobile-menu ul li:nth-child(5) { transition-delay: 0.3s; }
+#mobile-menu ul li:nth-child(6) { transition-delay: 0.35s; }
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
 }
