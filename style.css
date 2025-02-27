@@ -6,8 +6,8 @@
         top: 60px; /* Adjust based on nav height */
         left: 0;
         right: 0;
-        background-color: white; /* Background color for the dropdown */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        /* background-color: ;  */
+        
     }
 
     #nav-links.show {
@@ -64,8 +64,10 @@ ul {
     position: fixed;
     top: 0;
     z-index: 50; /* Ensure it appears above other content */
-    background-color: transparent; /* Change as needed */
+    background-color: #ffff; /* Change as needed */
     width: 100%; /* Ensure it takes the full width */
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 .card {
