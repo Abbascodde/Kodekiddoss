@@ -64,7 +64,7 @@ ul {
     position: fixed;
     top: 0;
     z-index: 50; /* Ensure it appears above other content */
-    background-color: white; /* Change as needed */
+    background-color: transparent; /* Change as needed */
     width: 100%; /* Ensure it takes the full width */
 }
 
