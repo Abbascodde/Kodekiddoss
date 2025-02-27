@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 668px) {
     #nav-links {
         display: none; /* Hide nav links by default on small screens */
         flex-direction: column; /* Stack links vertically */
@@ -55,9 +55,6 @@
     display: none;
 }
 
-body {
-    padding-top: 80px; /* Adjust this value based on the height of your nav */
-}
 
 ul {
     font-family: 'Baloo', cursive;

@@ -33,9 +33,9 @@ const nav = document.querySelector('nav');
 // Function to handle scroll events
 function handleScroll() {
     if (window.scrollY > 0) {
-        nav.classList.add('shadow-lg');
+        nav.classList.add('');
     } else {
-        nav.classList.remove('shadow-lg');
+        nav.classList.remove('');
     }
 }
 
