@@ -14,70 +14,39 @@
 
 <body>
     <!-- nav section start here -->
-    <header class="px-4 py-5 justify-center">
-        <nav class="bg-white fixed w-full top-0 z-50 pt-8 flex justify-around items-center py-4 lg:px-4 md:px-2 px-4">
+    <header class="">
+        <nav class="bg-transparent fixed top-0 z-50 pt-8 flex justify-around items-center py-4 lg:px-4 md:px-2 px-4" id="mainNav">
             <div class="flex items-center space-x-4 gap-2">
                 <div class="lg:hidden">
-                    <button id="menu-toggle"
-                        class="flex items-center justify-center w-10 h-10 border rounded-full border-[#FB8F28] hover:border-gray-600 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="#FB8F28" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                    <button id="menu-toggle" class="flex items-center justify-center w-10 h-10 border-2 rounded-full border-[#FB8F28]  hover:border-gray-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="#FB8F28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
                     </button>
                 </div>
                 <div>
-                    <a href="index.html"><h2 class="text-2xl font-bold">Kod<span class="text-[#FB8F28]">kiddos</span></h2></a>
+                    <a href="index.html"><h2 class="text-2xl font-bold cursor-pointer">Kod<span class="text-[#FB8F28]">kiddos</span></h2></a>
                 </div>
             </div>
             <!-- Desktop Menu -->
             <ul class="hidden lg:flex space-x-8">
-                <a href="index.html">
-                    <li class="text-[#FB8F28] cursor-pointer">Home</li>
-                </a>
-                <a href="about.html">
-                    <li class="cursor-pointer">About Us</li>
-                </a>
-                <a href="courses.html">
-                    <li class="cursor-pointer">Courses</li>
-                </a>
-                <a href="resources.html">
-                    <li class="cursor-pointer">Resources</li>
-                </a>
-                <a href="https://forms.gle/YjceqRMF6RUuuShB6">
-                    <li class="bg-[#374140] text-white px-2 p-1 rounded cursor-pointer">Join now</li>
-                </a>
-                <a href="https://forms.gle/YjceqRMF6RUuuShB6">
-                    <li class="bg-[#FB8F28] text-white p-1 rounded cursor-pointer">Book a free class</li>
-                </a>
+                <a href="index.html"><li class="text-[#FB8F28] cursor-pointer">Home</li></a>
+                <a href="about.html"><li class="cursor-pointer">About Us</li></a>
+                <a href="courses.html"><li class="cursor-pointer">Courses</li></a>
+                <a href="resources.html"><li class="cursor-pointer">Resources</li></a>
+                <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#374140] text-white px-2 p-1 rounded cursor-pointer">Join now</li></a>
+                <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#FB8F28] text-white p-1 rounded cursor-pointer">Book a free class</li></a>
             </ul>
 
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="fixed left-0 right-0 top-[88px] bg-white shadow-lg lg:hidden hidden">
                 <ul class="flex flex-col space-y-4 p-6">
-                    <a href="index.html">
-                        <li class="text-[#FB8F28] cursor-pointer hover:bg-gray-100 p-2 rounded">Home</li>
-                    </a>
-                    <a href="about.html">
-                        <li class="cursor-pointer hover:bg-gray-100 p-2 rounded">About Us</li>
-                    </a>
-                    <a href="courses.html">
-                        <li class="cursor-pointer hover:bg-gray-100 p-2 rounded">Courses</li>
-                    </a>
-                    <a href="resources.html">
-                        <li class="cursor-pointer hover:bg-gray-100 p-2 rounded">Resources</li>
-                    </a>
-                    <a href="https://forms.gle/YjceqRMF6RUuuShB6">
-                        <li
-                            class="bg-[#374140] text-white px-4 py-2 rounded cursor-pointer hover:bg-[#2a3332] text-center">
-                            Join now</li>
-                    </a>
-                    <a href="https://forms.gle/YjceqRMF6RUuuShB6">
-                        <li
-                            class="bg-[#FB8F28] text-white px-4 py-2 rounded cursor-pointer hover:bg-[#e07d1d] text-center mt-2">
-                            Book a free class</li>
-                    </a>
+                    <a href="index.html"><li class="text-[#FB8F28] cursor-pointer hover:bg-gray-100 p-2 rounded">Home</li></a>
+                    <a href="about.html"><li class="cursor-pointer hover:bg-gray-100 p-2 rounded">About Us</li></a>
+                    <a href="courses.html"><li class="cursor-pointer hover:bg-gray-100 p-2 rounded">Courses</li></a>
+                    <a href="resources.html"><li class="cursor-pointer hover:bg-gray-100 p-2 rounded">Resources</li></a>
+                    <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#374140] text-white px-4 py-2 rounded cursor-pointer hover:bg-[#2a3332] text-center">Join now</li></a>
+                    <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#FB8F28] text-white px-4 py-2 rounded cursor-pointer hover:bg-[#e07d1d] text-center mt-2">Book a free class</li></a>
                 </ul>
             </div>
         </nav>
