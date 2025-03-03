@@ -9,23 +9,23 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
 
-    <title>Kodkiddoss</title>
+    <title>Kodkiddos</title>
 </head>
 
 <body>
     <!-- nav section start here -->
-    <header class="mx-auto px-4 py-5 justify-center">
-        <nav class="bg-transparent fixed top-0 z-50 pt-8 flex justify-around items-center py-4 lg:px-4 md:px-2 px-4">
+    <header class="">
+        <nav class="bg-transparent fixed top-0 z-50 pt-8 flex justify-around items-center py-4 lg:px-4 md:px-2 px-4" id="mainNav">
             <div class="flex items-center space-x-4 gap-2">
                 <div class="lg:hidden">
                     <button id="menu-toggle" class="flex items-center justify-center w-10 h-10 border-2 rounded-full border-[#FB8F28]  hover:border-gray-600 focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="#FB8F28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                    </svg>
                     </button>
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold">Kod<span class="text-[#FB8F28]">kiddoss</span></h2>
+                    <a href="index.html"><h2 class="text-2xl font-bold cursor-pointer">Kod<span class="text-[#FB8F28]">kiddos</span></h2></a>
                 </div>
             </div>
             <!-- Desktop Menu -->
@@ -34,19 +34,19 @@
                 <a href="about.html"><li class="cursor-pointer">About Us</li></a>
                 <a href="courses.html"><li class="cursor-pointer">Courses</li></a>
                 <a href="resources.html"><li class="cursor-pointer">Resources</li></a>
-                <a href="join.html"><li class="bg-[#374140] text-white px-2 p-1 rounded cursor-pointer">Join now</li></a>
-                <a href="book.html"><li class="bg-[#FB8F28] text-white p-1 rounded cursor-pointer">Book a free class</li></a>
+                <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#374140] text-white px-2 p-1 rounded cursor-pointer">Join now</li></a>
+                <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#FB8F28] text-white p-1 rounded cursor-pointer">Book a free class</li></a>
             </ul>
 
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="fixed left-0 right-0 top-[88px] bg-white shadow-lg lg:hidden hidden">
                 <ul class="flex flex-col space-y-4 p-6">
-                   <a href="index.html"><li class="text-[#FB8F28] cursor-pointer hover:bg-gray-100 p-2 rounded">Home</li></a>
+                    <a href="index.html"><li class="text-[#FB8F28] cursor-pointer hover:bg-gray-100 p-2 rounded">Home</li></a>
                     <a href="about.html"><li class="cursor-pointer hover:bg-gray-100 p-2 rounded">About Us</li></a>
                     <a href="courses.html"><li class="cursor-pointer hover:bg-gray-100 p-2 rounded">Courses</li></a>
                     <a href="resources.html"><li class="cursor-pointer hover:bg-gray-100 p-2 rounded">Resources</li></a>
-                    <li class="bg-[#374140] text-white px-4 py-2 rounded cursor-pointer hover:bg-[#2a3332] text-center">Join now</li>
-                    <li class="bg-[#FB8F28] text-white px-4 py-2 rounded cursor-pointer hover:bg-[#e07d1d] text-center mt-2">Book a free class</li>
+                    <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#374140] text-white px-4 py-2 rounded cursor-pointer hover:bg-[#2a3332] text-center">Join now</li></a>
+                    <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#FB8F28] text-white px-4 py-2 rounded cursor-pointer hover:bg-[#e07d1d] text-center mt-2">Book a free class</li></a>
                 </ul>
             </div>
         </nav>
@@ -296,12 +296,12 @@
                         </h4>
                         <p class="font-Poppins text-xs pl-10 mb-6">Courses Developed by IIT, NIT, and IIM Alumnus</p>
                     </div>
-                    <div>
+                <div>
                         <h4 class="text-[20px] text-black flex items-center font-normal font-Poppins mb-3">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" viewBox="0 0 512 512">
                                     <path fill="#FB8F28" d="M17.47 250.9C88.82 328.1 158 397.6 224.5 485.5c72.3-143.8 146.3-288.1 268.4-444.37L460 26.06C356.9 135.4 276.8 238.9 207.2 361.9c-48.4-43.6-126.62-105.3-174.38-137z" stroke-width="13" stroke="#FB8F28" />
-                                </svg>
+                            </svg>
                             </span>
                             UK Certification
                         </h4>
@@ -613,7 +613,95 @@
             </div>
         </div>
     </footer>
+
+    <!-- Banner Popup - Adjusted z-index and positioning -->
+    <div id="bannerPopup" class="fixed top-0 left-0 right-0 z-40 transform transition-transform duration-300 ease-in-out translate-y-0" role="alert" aria-live="polite">
+        <div class="bg-[#374140] relative">
+            <div class="container mx-auto px-4 py-3">
+                <div class="flex items-center justify-between gap-4">
+                    <!-- Icon and Text Content -->
+                    <div class="flex items-center gap-3 flex-grow">
+                        <div class="hidden sm:flex bg-[#FB8F28] bg-opacity-20 p-2 rounded-full">
+                            <i class="ph ph-star text-[#FB8F28] text-xl"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="text-white text-sm sm:text-base">
+                                <span class="font-semibold">Summer Special:</span>
+                                <span class="hidden sm:inline">Get 20% off on all Python courses for kids! Limited time offer.</span>
+                                <span class="inline sm:hidden">20% off Python courses!</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CTA and Close Button -->
+                    <div class="flex items-center gap-3">
+                        <a href="https://forms.gle/YjceqRMF6RUuuShB6" class="bg-[#FB8F28] text-white px-4 py-1.5 rounded-lg text-sm font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap">
+                            Enroll Now
+                        </a>
+                        <button onclick="closeBanner()" class="text-white hover:text-gray-200 transition-colors" aria-label="Close banner">
+                            <i class="ph ph-x text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+
+    <script>
+        // Update the showBanner function to adjust nav position
+        function showBanner() {
+            const banner = document.getElementById('bannerPopup');
+            const nav = document.getElementById('mainNav');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            banner.classList.remove('-translate-y-full');
+            banner.classList.add('translate-y-0');
+            
+            // Get banner height
+            const bannerHeight = banner.offsetHeight;
+            
+            // Adjust nav position
+            nav.style.top = `${bannerHeight}px`;
+            
+            // Adjust mobile menu position
+            if (mobileMenu) {
+                mobileMenu.style.top = `${bannerHeight + 88}px`; // 88px is the original top position
+            }
+            
+            // Add padding to body
+            document.body.style.paddingTop = `${bannerHeight}px`;
+        }
+
+        // Update the closeBanner function
+        function closeBanner() {
+            const banner = document.getElementById('bannerPopup');
+            const nav = document.getElementById('mainNav');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            banner.classList.remove('translate-y-0');
+            banner.classList.add('-translate-y-full');
+            
+            // Reset nav position
+            nav.style.top = '0';
+            
+            // Reset mobile menu position
+            if (mobileMenu) {
+                mobileMenu.style.top = '88px';
+            }
+            
+            // Remove padding from body
+            document.body.style.paddingTop = '0';
+            
+            localStorage.setItem('bannerClosed', 'true');
+            localStorage.setItem('bannerClosedTime', new Date().getTime());
+            
+            setTimeout(() => {
+                banner.style.display = 'none';
+            }, 300);
+        }
+    </script>
 
 </body>
 

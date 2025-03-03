@@ -15,6 +15,16 @@
     }
 }
 
+header {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  
+
 /* Mobile Menu Animations */
 @keyframes slideDown {
     from {
@@ -115,3 +125,23 @@ ul {
 .animate-fadeIn {
     animation: fadeIn 0.5s ease-out forwards;
 }
+
+ 
+        
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100%); }
+        }
+
+        /* Optional: Add responsive styles */
+        @media (max-width: 640px) {
+            .hidden-mobile {
+                display: none !important;
+            }
+        }
+     

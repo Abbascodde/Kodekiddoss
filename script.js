@@ -152,11 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
       updateSlider(newIndex);
   });
 
-  // Auto-slide every 5 seconds
-  setInterval(() => {
-      const newIndex = (currentIndex + 1) % dots.length;
-      updateSlider(newIndex);
-  }, 5000);
 
 
   function toggleHiddenCourse() {
@@ -173,3 +168,87 @@ document.addEventListener('DOMContentLoaded', () => {
         viewMoreBtn.innerHTML = '<span>View More</span><i class="ph ph-arrow-down"></i>';
     }
 }
+
+// Check if the banner has been closed before
+function checkBannerStatus() {
+    const bannerClosed = localStorage.getItem('bannerClosed');
+    const lastClosedTime = localStorage.getItem('bannerClosedTime');
+    const currentTime = new Date().getTime();
+    
+    // Show banner if it hasn't been closed or if 24 hours have passed since last closure
+    if (!bannerClosed || (currentTime - lastClosedTime > 24 * 60 * 60 * 1000)) {
+        showBanner();
+    }
+}
+
+// Show the banner
+function showBanner() {
+    const banner = document.getElementById('bannerPopup');
+    banner.classList.remove('translate-y-0');
+    banner.classList.add('translate-y-0');
+    
+    // Add padding to body to prevent content jump
+    document.body.style.paddingTop = banner.offsetHeight + 'px';
+}
+
+// Close the banner
+function closeBanner() {
+    const banner = document.getElementById('bannerPopup');
+    banner.classList.remove('translate-y-0');
+    banner.classList.add('-translate-y-full');
+    
+    // Remove padding from body
+    document.body.style.paddingTop = '0';
+    
+    // Store the closure in localStorage
+    localStorage.setItem('bannerClosed', 'true');
+    localStorage.setItem('bannerClosedTime', new Date().getTime());
+    
+    // Remove banner from DOM after animation
+    setTimeout(() => {
+        banner.style.display = 'none';
+    }, 300);
+}
+
+// Initialize banner on page load
+document.addEventListener('DOMContentLoaded', checkBannerStatus);
+
+// Update banner content (can be called with new content)
+function updateBannerContent(config) {
+    const banner = document.getElementById('bannerPopup');
+    if (!banner) return;
+
+    // Example config object:
+    // {
+    //     icon: 'ph-star',
+    //     backgroundColor: '#374140',
+    //     textColor: 'white',
+    //     message: 'New message here',
+    //     ctaText: 'Click Here',
+    //     ctaUrl: '/new-url',
+    //     desktopOnly: false
+    // }
+
+    if (config.icon) {
+        banner.querySelector('.ph').className = `ph ${config.icon}`;
+    }
+    if (config.backgroundColor) {
+        banner.querySelector('.bg-[#374140]').style.backgroundColor = config.backgroundColor;
+    }
+    if (config.textColor) {
+        banner.querySelector('.text-white').style.color = config.textColor;
+    }
+    if (config.message) {
+        const messageElement = banner.querySelector('p');
+        messageElement.innerHTML = config.message;
+    }
+    if (config.ctaText && config.ctaUrl) {
+        const ctaButton = banner.querySelector('a');
+        ctaButton.textContent = config.ctaText;
+        ctaButton.href = config.ctaUrl;
+    }
+    if (config.desktopOnly !== undefined) {
+        banner.classList.toggle('hidden-mobile', config.desktopOnly);
+    }
+}
+ 
