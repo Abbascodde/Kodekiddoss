@@ -74,7 +74,7 @@ ul {
     position: fixed;
     top: 0;
     z-index: 50; /* Ensure it appears above other content */
-    background-color: #ffff; /* Change as needed */
+    /* background-color: ;   */
     width: 100%; /* Ensure it takes the full width */
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
