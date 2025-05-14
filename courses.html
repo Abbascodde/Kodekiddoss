@@ -15,7 +15,7 @@
 <body>
     <!-- nav section start here -->
     <header class="">
-        <nav class="bg-transparent fixed top-0 z-50 pt-8 flex justify-around items-center py-4 lg:px-4 md:px-2 px-4" id="mainNav">
+        <nav class="bg-white fixed top-0 z-50 pt-8 flex justify-around items-center py-4 lg:px-4 md:px-2 px-4" id="mainNav">
             <div class="flex items-center space-x-4 gap-2">
                 <div class="lg:hidden">
                     <button id="menu-toggle" class="flex items-center justify-center w-10 h-10 border-2 rounded-full border-[#FB8F28]  hover:border-gray-600 focus:outline-none">
@@ -153,118 +153,136 @@
     </section>
 </main>
 
-<section class="container mx-auto px-4 py-12">
+<section class="container mx-auto px-4 py-10">
     <!-- Section Header -->
-    <div class="text-center mb-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-[#374140] mb-3">Our Popular Courses</h2>
+    <div class="text-center mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#374140] mb-2">Our Popular Courses</h2>
         <p class="text-gray-600 max-w-2xl mx-auto text-sm">Discover our carefully crafted courses designed to nurture your child's coding journey from beginner to advanced levels.</p>
     </div>
 
-    <!-- Courses Grid - Reduced max-width and gap -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        <!-- Course Card 1 - Reduced padding and text sizes -->
-        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="aspect-w-16 aspect-h-9 rounded-t-lg overflow-hidden">
-                <img src="images/11.jpg" alt="Python for Kids" class="object-cover w-full h-full">
+    <!-- Courses Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
+        <!-- Course Card 1 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 h-full">
+            <div class="relative pb-[56.25%] rounded-t-lg overflow-hidden">
+                <img src="images/11.jpg" alt="Python for Kids" class="absolute inset-0 w-full h-full object-cover">
             </div>
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="px-2 py-1 bg-[#FB8F28] bg-opacity-10 text-[#4a5756] rounded-full text-xs font-medium">Ages 8-12</span>
+            <div class="p-3.5">
+                <div class="flex items-center justify-between mb-1.5">
+                    <span class="px-2 py-0.5 bg-[#FB8F28] bg-opacity-10 text-[#4a5756] rounded-full text-xs font-medium">Ages 8-12</span>
                     <span class="text-gray-600 text-xs">12 Weeks</span>
                 </div>
                 <h3 class="text-lg font-bold text-[#374140] mb-1">Python for Kids</h3>
-                <p class="text-gray-600 text-sm mb-3 line-clamp-2">Introduction to Python programming through fun projects and games.</p>
+                <p class="text-gray-600 text-xs mb-2.5 line-clamp-2">Introduction to Python programming through fun projects and games.</p>
                 <div class="flex items-center justify-between">
                     <span class="text-[#FB8F28] font-bold text-sm">$199</span>
-                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-sm hover:bg-opacity-90 transition-colors duration-300">Learn More</button>
+                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-xs hover:bg-[#FB8F28] transition-colors duration-300">Learn More</button>
                 </div>
             </div>
         </div>
 
         <!-- Course Card 2 -->
-        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="aspect-w-16 aspect-h-9 rounded-t-lg overflow-hidden">
-                <img src="images/05.jpg" alt="Web Development" class="object-cover w-full h-full">
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 h-full">
+            <div class="relative pb-[56.25%] rounded-t-lg overflow-hidden">
+                <img src="images/05.jpg" alt="Web Development" class="absolute inset-0 w-full h-full object-cover">
             </div>
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="px-2 py-1 bg-[#FB8F28] bg-opacity-10 text-[#4a5756] rounded-full text-xs font-medium">Ages 10-14</span>
+            <div class="p-3.5">
+                <div class="flex items-center justify-between mb-1.5">
+                    <span class="px-2 py-0.5 bg-[#FB8F28] bg-opacity-10 text-[#4a5756] rounded-full text-xs font-medium">Ages 10-14</span>
                     <span class="text-gray-600 text-xs">10 Weeks</span>
                 </div>
                 <h3 class="text-lg font-bold text-[#374140] mb-1">Web Development</h3>
-                <p class="text-gray-600 text-sm mb-3 line-clamp-2">Learn HTML, CSS, and JavaScript to create amazing websites.</p>
+                <p class="text-gray-600 text-xs mb-2.5 line-clamp-2">Learn HTML, CSS, and JavaScript to create amazing websites.</p>
                 <div class="flex items-center justify-between">
                     <span class="text-[#FB8F28] font-bold text-sm">$249</span>
-                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-sm hover:bg-opacity-90 transition-colors duration-300">Learn More</button>
+                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-xs hover:bg-[#FB8F28] transition-colors duration-300">Learn More</button>
                 </div>
             </div>
         </div>
 
         <!-- Course Card 3 -->
-        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="aspect-w-16 aspect-h-9 rounded-t-lg overflow-hidden">
-                <img src="images/17.jpg" alt="Game Development" class="object-cover w-full h-full">
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 h-full">
+            <div class="relative pb-[56.25%] rounded-t-lg overflow-hidden">
+                <img src="images/17.jpg" alt="Game Development" class="absolute inset-0 w-full h-full object-cover">
             </div>
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="px-2 py-1 bg-[#FB8F28] bg-opacity-10 text-[##4a5756] rounded-full text-xs font-medium">Ages 9-13</span>
+            <div class="p-3.5">
+                <div class="flex items-center justify-between mb-1.5">
+                    <span class="px-2 py-0.5 bg-[#FB8F28] bg-opacity-10 text-[#4a5756] rounded-full text-xs font-medium">Ages 9-13</span>
                     <span class="text-gray-600 text-xs">8 Weeks</span>
                 </div>
                 <h3 class="text-lg font-bold text-[#374140] mb-1">Game Development</h3>
-                <p class="text-gray-600 text-sm mb-3 line-clamp-2">Create your own games using Scratch and basic programming concepts.</p>
+                <p class="text-gray-600 text-xs mb-2.5 line-clamp-2">Create your own games using Scratch and basic programming concepts.</p>
                 <div class="flex items-center justify-between">
                     <span class="text-[#FB8F28] font-bold text-sm">$179</span>
-                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-sm hover:bg-opacity-90 transition-colors duration-300">Learn More</button>
+                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-xs hover:bg-[#FB8F28] transition-colors duration-300">Learn More</button>
                 </div>
             </div>
         </div>
 
         <!-- Course Card 4 -->
-        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="aspect-w-16 aspect-h-9 rounded-t-lg overflow-hidden">
-                <img src="images/andrea-de-santis-zwd435-ewb4-unsplash.jpg" alt="Robotics" class="object-cover w-full h-full">
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 h-full">
+            <div class="relative pb-[56.25%] rounded-t-lg overflow-hidden">
+                <img src="images/andrea-de-santis-zwd435-ewb4-unsplash.jpg" alt="Robotics" class="absolute inset-0 w-full h-full object-cover">
             </div>
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="px-2 py-1 bg-[#FB8F28] bg-opacity-10 text-[#4a5756] rounded-full text-xs font-medium">Ages 11-15</span>
+            <div class="p-3.5">
+                <div class="flex items-center justify-between mb-1.5">
+                    <span class="px-2 py-0.5 bg-[#FB8F28] bg-opacity-10 text-[#4a5756] rounded-full text-xs font-medium">Ages 11-15</span>
                     <span class="text-gray-600 text-xs">14 Weeks</span>
                 </div>
                 <h3 class="text-lg font-bold text-[#374140] mb-1">Robotics & AI</h3>
-                <p class="text-gray-600 text-sm mb-3 line-clamp-2">Explore robotics and artificial intelligence through hands-on projects.</p>
+                <p class="text-gray-600 text-xs mb-2.5 line-clamp-2">Explore robotics and artificial intelligence through hands-on projects.</p>
                 <div class="flex items-center justify-between">
                     <span class="text-[#FB8F28] font-bold text-sm">$299</span>
-                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-sm hover:bg-opacity-90 transition-colors duration-300">Learn More</button>
+                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-xs hover:bg-[#FB8F28] transition-colors duration-300">Learn More</button>
                 </div>
             </div>
         </div>
 
         <!-- Course Card 5 (Hidden by default) -->
-        <div class="hidden bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" id="hiddenCourse">
-            <div class="aspect-w-16 aspect-h-9 rounded-t-lg overflow-hidden">
-                <img src="images/13.jpg" alt="App Development" class="object-cover w-full h-full">
+        <div class="hidden md:hidden lg:hidden bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 h-full" id="hiddenCourse">
+            <div class="relative pb-[56.25%] rounded-t-lg overflow-hidden">
+                <img src="images/13.jpg" alt="App Development" class="absolute inset-0 w-full h-full object-cover">
             </div>
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="px-2 py-1 bg-[#FB8F28] bg-opacity-10 text-[#FB8F28] rounded-full text-xs font-medium">Ages 13-16</span>
+            <div class="p-3.5">
+                <div class="flex items-center justify-between mb-1.5">
+                    <span class="px-2 py-0.5 bg-[#FB8F28] bg-opacity-10 text-[#4a5756] rounded-full text-xs font-medium">Ages 13-16</span>
                     <span class="text-gray-600 text-xs">16 Weeks</span>
                 </div>
                 <h3 class="text-lg font-bold text-[#374140] mb-1">App Development</h3>
-                <p class="text-gray-600 text-sm mb-3 line-clamp-2">Learn to create mobile apps using modern development tools.</p>
+                <p class="text-gray-600 text-xs mb-2.5 line-clamp-2">Learn to create mobile apps using modern development tools.</p>
                 <div class="flex items-center justify-between">
                     <span class="text-[#FB8F28] font-bold text-sm">$349</span>
-                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-sm hover:bg-opacity-90 transition-colors duration-300">Learn More</button>
+                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-xs hover:bg-[#FB8F28] transition-colors duration-300">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:hidden lg:hidden bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 h-full" id="hiddenCourse">
+            <div class="relative pb-[56.25%] rounded-t-lg overflow-hidden">
+                <img src="images/13.jpg" alt="App Development" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+            <div class="p-3.5">
+                <div class="flex items-center justify-between mb-1.5">
+                    <span class="px-2 py-0.5 bg-[#FB8F28] bg-opacity-10 text-[#4a5756] rounded-full text-xs font-medium">Ages 13-16</span>
+                    <span class="text-gray-600 text-xs">16 Weeks</span>
+                </div>
+                <h3 class="text-lg font-bold text-[#374140] mb-1">App Development</h3>
+                <p class="text-gray-600 text-xs mb-2.5 line-clamp-2">Learn to create mobile apps using modern development tools.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-[#FB8F28] font-bold text-sm">$349</span>
+                    <button class="bg-[#374140] text-white px-3 py-1.5 rounded-md text-xs hover:bg-[#FB8F28] transition-colors duration-300">Learn More</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- View More Button - Reduced size -->
-    <div class="text-center mt-6">
-        <button onclick="toggleHiddenCourse()" id="viewMoreBtn" class="bg-[#FB8F28] text-white px-6 py-2 rounded-md text-sm font-semibold hover:bg-opacity-90 transition-colors duration-300 flex items-center gap-2 mx-auto">
+    <!-- View More Button -->
+    <div class="text-center mt-5">
+        <button onclick="toggleHiddenCourse()" id="viewMoreBtn" class="bg-[#FB8F28] text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-opacity-90 transition-all duration-300 hover:scale-105 flex items-center gap-1.5 mx-auto">
             <span>View More</span>
-            <i class="ph ph-arrow-down text-sm"></i>
+            <i class="ph ph-arrow-down text-sm transition-transform duration-300"></i>
         </button>
     </div>
+
 </section>
 
 <!-- Why Choose Us Section -->

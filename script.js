@@ -90,25 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.querySelector('.card-container');
-    const cards = document.querySelectorAll('.card');
-    const prevButton = document.querySelector('.arrow-left');
-    const nextButton = document.querySelector('.arrow-right');
   
-    let currentIndex = 0;
-    const cardWidth = cards[0].offsetWidth + 32; // Card width + gap (32px)
   
     // Function to move the carousel
-    const moveCarousel = (direction) => {
-      if (direction === 'next' && currentIndex < cards.length - 1) {
-        currentIndex++;
-      } else if (direction === 'prev' && currentIndex > 0) {
-        currentIndex--;
-      }
-  
-      const offset = -currentIndex * cardWidth;
-      carousel.style.transform = `translateX(${offset}px)`;
-    };
   
    
   });
@@ -252,3 +236,23 @@ function updateBannerContent(config) {
     }
 }
  
+
+function toggleHiddenCourse() {
+    const hiddenCourse = document.getElementById('hiddenCourse');
+    const viewMoreBtn = document.getElementById('viewMoreBtn');
+    const arrowIcon = viewMoreBtn.querySelector('i');
+    
+    if (hiddenCourse.classList.contains('hidden')) {
+        hiddenCourse.classList.remove('hidden', 'md:hidden', 'lg:hidden');
+        hiddenCourse.classList.add('block', 'md:block', 'lg:block');
+        viewMoreBtn.querySelector('span').textContent = 'View Less';
+        arrowIcon.classList.remove('ph-arrow-down');
+        arrowIcon.classList.add('ph-arrow-up');
+    } else {
+        hiddenCourse.classList.remove('block', 'md:block', 'lg:block');
+        hiddenCourse.classList.add('hidden', 'md:hidden', 'lg:hidden');
+        viewMoreBtn.querySelector('span').textContent = 'View More';
+        arrowIcon.classList.remove('ph-arrow-up');
+        arrowIcon.classList.add('ph-arrow-down');
+    }
+}

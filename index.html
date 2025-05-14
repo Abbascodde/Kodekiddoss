@@ -15,7 +15,7 @@
 <body>
     <!-- nav section start here -->
     <header class="">
-        <nav class="bg-transparent fixed top-0 z-50 pt-8 flex justify-around items-center py-4 lg:px-4 md:px-2 px-4" id="mainNav">
+        <nav class="bg-white fixed top-0 z-50 pt-8 flex justify-around items-center py-4 lg:px-4 md:px-2 px-4" id="mainNav">
             <div class="flex items-center space-x-4 gap-2">
                 <div class="lg:hidden">
                     <button id="menu-toggle" class="flex items-center justify-center w-10 h-10 border-2 rounded-full border-[#FB8F28]  hover:border-gray-600 focus:outline-none">
@@ -34,8 +34,8 @@
                 <a href="about.html"><li class="cursor-pointer">About Us</li></a>
                 <a href="courses.html"><li class="cursor-pointer">Courses</li></a>
                 <a href="resources.html"><li class="cursor-pointer">Resources</li></a>
-                <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#374140] text-white px-2 p-1 rounded cursor-pointer">Join now</li></a>
-                <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#FB8F28] text-white p-1 rounded cursor-pointer">Book a free class</li></a>
+                <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#374140] text-white px-2 p-2 rounded cursor-pointer">Join now</li></a>
+                <a href="https://forms.gle/YjceqRMF6RUuuShB6"><li class="bg-[#FB8F28] text-white p-2 rounded cursor-pointer">Book a free class</li></a>
             </ul>
 
             <!-- Mobile Menu -->
@@ -52,26 +52,112 @@
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 mt-[150px] lg:mt-24">
+    <main class="container mx-auto px-6 pt-32 pb-16 lg:pt-40">
         <div class="flex flex-col sm:flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
-            <div class="w-full sm:w-1/2 flex flex-col items-center sm:items-start">
-                <h1 class="text-4xl font-extrabold font-poppins mb-6 text-center sm:text-left">Coding Courses for Kids</h1>
-                <p class="text-gray-500 font-Roboto mb-4 text-center sm:text-left max-w-lg">Kodkiddoss is a platform that offers coding courses for kids.
-                    We offer a range of courses for kids of all ages and
-                    skill levels.</p>
-                <p class="text-gray-500 font-Roboto mb-6 text-center sm:text-left max-w-lg">Get instructors-led coding classes for your kids in the comfort of
-                    your home.</p>
-                <button class="bg-[#FB8F28] text-white py-2 px-6 rounded-md hover:bg-[#e07d1d] transition-colors duration-300 w-full sm:w-auto">Book a free class</button>
+          <!-- Text Content Side -->
+          <div class="w-full sm:w-1/2 flex flex-col items-center sm:items-start">
+            <div class="relative mb-3">
+              <span class="inline-block px-4 py-1 text-sm text-[#FB8F28] font-medium bg-orange-100 rounded-full">
+                Learn coding the fun way
+              </span>
             </div>
-
-            <div class="hidden sm:flex w-full sm:w-1/2 relative h-[400px] items-center justify-center">
-                <img class="absolute w-[90%] sm:w-[100%] max-w-[600px] object-contain"
-                    src="images/blob 1.png" alt="">
-                <img class="absolute w-[70%] sm:w-[80%] max-w-[400px] object-contain z-10"
-                    src="images/progrM 1.png" alt="">
+            
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold font-poppins mb-6 text-center sm:text-left leading-tight">
+              <span class="text-[#374140]">Coding Courses</span>
+              <span class="block text-[#FB8F28]">for Kids</span>
+            </h1>
+            
+            <p class="text-gray-600 font-Roboto mb-4 text-lg md:text-xl text-center sm:text-left max-w-lg">
+              Kodkiddos is a platform that offers engaging coding courses for kids.
+              We provide a range of programs for all ages and skill levels.
+            </p>
+            
+            <div class="space-y-3 mb-8 w-full sm:w-auto">
+              <div class="flex items-start gap-3">
+                <div class="mt-1 bg-[#FB8F28] rounded-full p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p class="text-gray-600">Instructor-led live classes</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-1 bg-[#FB8F28] rounded-full p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p class="text-gray-600">Learn from the comfort of your home</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-1 bg-[#FB8F28] rounded-full p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p class="text-gray-600">Fun, engaging curriculum for all skill levels</p>
+              </div>
             </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+              <a href="#" class="bg-[#FB8F28] text-white py-3 px-8 rounded-lg hover:bg-[#e07d1d] transition-colors duration-300 text-center font-medium shadow-lg shadow-orange-200">
+                Book a free class
+              </a>
+              <a href="#" class="bg-white border border-gray-300 text-[#374140] py-3 px-8 rounded-lg hover:bg-gray-50 transition-colors duration-300 text-center font-medium">
+                Explore courses
+              </a>
+            </div>
+          </div>
+      
+          <!-- Image Side -->
+          <div class="w-full sm:w-1/2 relative h-[400px] flex items-center justify-center">
+            <!-- Background glow effect -->
+            <div class="absolute w-[80%] h-[80%] bg-orange-100 rounded-full blur-3xl opacity-30"></div>
+            
+            <!-- Blob background -->
+            <img class="absolute w-[90%] sm:w-[100%] max-w-[600px] object-contain animate-pulse" 
+                 style="animation-duration: 6s;" 
+                 src="images/blob 1.png" alt="Background blob shape">
+            
+            <!-- Main image -->
+            <img class="absolute w-[70%] sm:w-[80%] max-w-[400px] object-contain z-10 animate-bounce-slow" 
+                 src="images/progrM 1.png" alt="Kid programming illustration">
+                 
+            <!-- Animation definition -->
+            <style>
+              @keyframes bounce-slow {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-15px); }
+              }
+              .animate-bounce-slow {
+                animation: bounce-slow 5s infinite ease-in-out;
+              }
+            </style>
+          </div>
         </div>
-    </main>
+        
+        <!-- Trust indicators -->
+        <div class="mt-16 text-center">
+          <p class="text-gray-500 text-sm mb-6">TRUSTED BY PARENTS WORLDWIDE</p>
+          <div class="flex flex-wrap justify-center gap-8 opacity-70">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74 9.94"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <path d="M16 3v18"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l9 21H3L12 2z"></path>
+            </svg>
+          </div>
+        </div>
+      </main>
+      
 
     <section class="container mx-auto px-4 mt-20 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-8">
         <div class="sm:w-1/2 order-2 sm:order-1">
@@ -86,59 +172,221 @@
         </div>
     </section>
 
-    <section class="container mx-auto px-4 mt-20 relative">
-        <!-- Left Arrow -->
-        <button class="arrow-left absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg z-10 hover:bg-gray-100 transition-colors duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#374140" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 18l-6-6 6-6" />
-            </svg>
-        </button>
-    
-        <!-- Card Container -->
-        <div class="card-container overflow-hidden sm:grid sm:grid-cols-3 sm:gap-8 lg:grid-cols-1 lg:gap-4">
-            <div class="flex gap-8 transition-transform duration-300">
-                <!-- Card 1: Little Coder -->
-                <div class="card flex-shrink-0 w-full lg:w-[300px] bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-                    <img class="w-full h-[200px] object-cover rounded-t-lg" src="images/Little Coder - Home 1littlecoder.png" alt="Little Coder Course Image" />
-                    <div class="p-6 text-center">
-                        <h2 class="text-2xl text-[#FB8F28] font-bold font-Poppins">Little Coder</h2>
-                        <p class="text-gray-500 font-Poppins">Age 5-9</p>
-                        <p class="text-gray-500 font-Poppins text-center">Create Animations & Games <br> using Visual coding</p>
-                        <button class="bg-[#374140] text-white p-1 pb-2 px-5 rounded mt-5 mb-2 cursor-pointer hover:bg-[#FB8F28] transition-colors duration-300">Enroll now</button>
-                    </div>
-                </div>
-    
-                <!-- Card 2: AI Course -->
-                <div class="card flex-shrink-0 w-full lg:w-[300px] bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-                    <img class="w-full h-[200px] object-cover rounded-t-lg" src="images/Little Coder - Home 1.png" alt="AI Course Image" />
-                    <div class="p-6 text-center">
-                        <h2 class="text-2xl text-[#FB8F28] font-bold font-Poppins">AI Course</h2>
-                        <p class="text-gray-500 font-Poppins">Age 9+</p>
-                        <p class="text-gray-500 font-Poppins text-center">Create Animations & Games <br> using Visual coding</p>
-                        <button class="bg-[#374140] text-white p-1 pb-2 px-5 rounded mt-5 mb-2 cursor-pointer hover:bg-[#FB8F28] transition-colors duration-300">Enroll now</button>
-                    </div>
-                </div>
-    
-                <!-- Card 3: Web Development -->
-                <div class="card flex-shrink-0 w-full lg:w-[300px] bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-                    <img class="w-full h-[200px] object-cover rounded-t-lg" src="images/WEBDEV 1.png" alt="Web Development Course Image" />
-                    <div class="p-6 text-center">
-                        <h2 class="text-2xl text-[#FB8F28] font-bold font-Poppins">Design Your Website</h2>
-                        <p class="text-gray-500 font-Poppins">Age 10+</p>
-                        <p class="text-gray-500 font-Poppins text-center">Create Animations & Games <br> using Visual coding</p>
-                        <button class="bg-[#374140] text-white p-1 pb-2 px-5 rounded mt-5 mb-2 cursor-pointer hover:bg-[#FB8F28] transition-colors duration-300">Enroll now</button>
-                    </div>
-                </div>
-            </div>
+    <section class="container mx-auto px-4 py-16 relative">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-3">Our <span class="text-[#FB8F28]">Courses</span></h2>
+          <div class="w-20 h-1 bg-[#FB8F28] mx-auto"></div>
+          <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Discover our specialized coding programs designed for young minds to explore technology and creativity.</p>
         </div>
-    
-        <!-- Right Arrow -->
-        <button class="arrow-right absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg z-10 hover:bg-gray-100 transition-colors duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#374140" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 18l6-6-6-6" />
-            </svg>
-        </button>
-    </section>
+      
+        <!-- Carousel Navigation -->
+        <div class="relative max-w-7xl mx-auto px-8">
+          <!-- Card Container -->
+          <div class="overflow-hidden">
+            <div class="flex gap-8 transition-transform duration-500 snap-x snap-mandatory scrollbar-hide overflow-x-auto py-4 px-2">
+              <!-- Card 1: Little Coder -->
+              <div class="snap-center flex-shrink-0 w-full sm:w-[330px] bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="relative">
+                  <img class="w-full h-[200px] object-cover rounded-t-xl" src="images/Little Coder - Home 1littlecoder.png" alt="Little Coder Course Image" />
+                  <div class="absolute top-4 right-4 bg-[#FB8F28] text-white text-xs uppercase font-semibold tracking-wider py-1 px-3 rounded-full">Popular</div>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-2xl text-[#FB8F28] font-bold font-Poppins">Little Coder</h2>
+                    <span class="bg-[#374140] bg-opacity-10 text-[#374140] text-sm py-1 px-3 rounded-full">Age 5-9</span>
+                  </div>
+                  <p class="text-gray-600 font-Poppins mb-5">Create Animations & Games using Visual coding</p>
+                  <div class="flex flex-col gap-2 mt-6">
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#FB8F28]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>12 weeks program</span>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#FB8F28]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>Beginner friendly</span>
+                    </div>
+                  </div>
+                  <button class="w-full bg-[#374140] text-white py-3 px-5 rounded-lg mt-6 font-medium hover:bg-[#FB8F28] transition-colors duration-300 flex items-center justify-center">
+                    <span>Enroll now</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+      
+              <!-- Card 2: AI Course -->
+              <div class="snap-center flex-shrink-0 w-full sm:w-[330px] bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="relative">
+                  <img class="w-full h-[200px] object-cover rounded-t-xl" src="images/Little Coder - Home 1.png" alt="AI Course Image" />
+                  <div class="absolute top-4 right-4 bg-[#374140] text-white text-xs uppercase font-semibold tracking-wider py-1 px-3 rounded-full">New</div>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-2xl text-[#FB8F28] font-bold font-Poppins">AI Course</h2>
+                    <span class="bg-[#374140] bg-opacity-10 text-[#374140] text-sm py-1 px-3 rounded-full">Age 9+</span>
+                  </div>
+                  <p class="text-gray-600 font-Poppins mb-5">Learn AI concepts through creative coding projects</p>
+                  <div class="flex flex-col gap-2 mt-6">
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#FB8F28]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>10 weeks program</span>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#FB8F28]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>Intermediate level</span>
+                    </div>
+                  </div>
+                  <button class="w-full bg-[#374140] text-white py-3 px-5 rounded-lg mt-6 font-medium hover:bg-[#FB8F28] transition-colors duration-300 flex items-center justify-center">
+                    <span>Enroll now</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="snap-center flex-shrink-0 w-full sm:w-[330px] bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="relative">
+                  <img class="w-full h-[200px] object-cover rounded-t-xl" src="images/Little Coder - Home 1.png" alt="AI Course Image" />
+                  <div class="absolute top-4 right-4 bg-[#374140] text-white text-xs uppercase font-semibold tracking-wider py-1 px-3 rounded-full">New</div>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-2xl text-[#FB8F28] font-bold font-Poppins">AI Course</h2>
+                    <span class="bg-[#374140] bg-opacity-10 text-[#374140] text-sm py-1 px-3 rounded-full">Age 9+</span>
+                  </div>
+                  <p class="text-gray-600 font-Poppins mb-5">Learn AI concepts through creative coding projects</p>
+                  <div class="flex flex-col gap-2 mt-6">
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#FB8F28]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>10 weeks program</span>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#FB8F28]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>Intermediate level</span>
+                    </div>
+                  </div>
+                  <button class="w-full bg-[#374140] text-white py-3 px-5 rounded-lg mt-6 font-medium hover:bg-[#FB8F28] transition-colors duration-300 flex items-center justify-center">
+                    <span>Enroll now</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+      
+              <!-- Card 3: Web Development -->
+              <div class="snap-center flex-shrink-0 w-full sm:w-[330px] bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="relative">
+                  <img class="w-full h-[200px] object-cover rounded-t-xl" src="images/WEBDEV 1.png" alt="Web Development Course Image" />
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-2xl text-[#FB8F28] font-bold font-Poppins">Web Design</h2>
+                    <span class="bg-[#374140] bg-opacity-10 text-[#374140] text-sm py-1 px-3 rounded-full">Age 10+</span>
+                  </div>
+                  <p class="text-gray-600 font-Poppins mb-5">Create your own websites with HTML, CSS & JavaScript</p>
+                  <div class="flex flex-col gap-2 mt-6">
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#FB8F28]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>14 weeks program</span>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#FB8F28]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>Advanced projects</span>
+                    </div>
+                  </div>
+                  <button class="w-full bg-[#374140] text-white py-3 px-5 rounded-lg mt-6 font-medium hover:bg-[#FB8F28] transition-colors duration-300 flex items-center justify-center">
+                    <span>Enroll now</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+        
+        <!-- Pagination Dots -->
+        <div class="flex justify-center mt-8 gap-2">
+          <button class="w-3 h-3 rounded-full bg-[#FB8F28]"></button>
+          <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-[#FB8F28] transition-colors duration-300"></button>
+          <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-[#FB8F28] transition-colors duration-300"></button>
+        </div>
+      
+        <script>
+          // Add this JavaScript to make the carousel functional
+          document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.flex.gap-8');
+            const cards = document.querySelectorAll('.snap-center');
+            const leftArrow = document.querySelector('.arrow-left');
+            const rightArrow = document.querySelector('.arrow-right');
+            const paginationDots = document.querySelectorAll('.w-3.h-3.rounded-full');
+            
+            let currentIndex = 0;
+            const cardWidth = cards[0].offsetWidth + 32; // width + gap
+            
+            // Update active dot
+            function updateDots() {
+              paginationDots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                  dot.classList.remove('bg-gray-300');
+                  dot.classList.add('bg-[#FB8F28]');
+                } else {
+                  dot.classList.remove('bg-[#FB8F28]');
+                  dot.classList.add('bg-gray-300');
+                }
+              });
+            }
+            
+            // Navigate to previous slide
+            leftArrow.addEventListener('click', () => {
+              if (currentIndex > 0) {
+                currentIndex--;
+                container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                updateDots();
+              }
+            });
+            
+            // Navigate to next slide
+            rightArrow.addEventListener('click', () => {
+              if (currentIndex < cards.length - 1) {
+                currentIndex++;
+                container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                updateDots();
+              }
+            });
+            
+            // Add click events for pagination dots
+            paginationDots.forEach((dot, index) => {
+              dot.addEventListener('click', () => {
+                currentIndex = index;
+                container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                updateDots();
+              });
+            });
+          });
+        </script>
+      </section>
+      
 
     <!-- Section 2 -->
     <section class="container mx-auto px-4 mt-20 relative bg-[#F7F7F7] rounded-lg shadow-lg p-8">
@@ -248,12 +496,12 @@
                     provides exciting activities so children can <br>
                     understand the programming concepts <br>
                     thoroughly so that they can perform them on <br>
-                     their own. With Cyber Square kids have fun <br>
+                    their own. With Cyber Square kids have fun <br>
                     while they learn without frustrations.</p>
-                 <h4 class="text-[20px] text-white flex items-center font-Roboto mb-5"><span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" viewBox="0 0 512 512">
+                <h4 class="text-[20px] text-white flex items-center font-Roboto mb-5"><span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" viewBox="0 0 512 512">
                     <path fill="#333" d="M17.47 250.9C88.82 328.1 158 397.6 224.5 485.5c72.3-143.8 146.3-288.1 268.4-444.37L460 26.06C356.9 135.4 276.8 238.9 207.2 361.9c-48.4-43.6-126.62-105.3-174.38-137z" stroke-width="13" stroke="#333" />
                 </svg></span>Professional Approach & Tools</h4>
-                 <p class="font-Poppins text-xs text-white pl-10">We use the latest tools and technologies to <br>
+                <p class="font-Poppins text-xs text-white pl-10">We use the latest tools and technologies to <br>
                     ensure that our students are able to learn at <br> their own pace and 
                     progress at their own speed. We also provide <br> support to our students 
                     so that they can learn at their own pace.</p>
@@ -283,7 +531,7 @@
                             </span>
                             Learn from the industry experts.
                         </h4>
-                        <p class="font-Poppins text-xs pl-10 mb-6">Learn coding from the pioneers in the field of AI & <br> Data Science.</p>
+                        <p class="font-Poppins text-xs pl-10 mb-6">Learn coding from the pioneers in the field of AI & <br> Data Science.  </p>
                     </div>
                     <div>
                         <h4 class="text-[20px] text-black flex items-center font-normal font-Poppins mb-3">

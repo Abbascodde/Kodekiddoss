@@ -76,8 +76,8 @@ ul {
     z-index: 50; /* Ensure it appears above other content */
     /* background-color: ;   */
     width: 100%; /* Ensure it takes the full width */
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    /* border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px; */
 }
 
 .card {
